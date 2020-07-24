@@ -25,11 +25,17 @@ int main()
 			int num,acum,respuesta_total;
 			acum = 0;
 			cin >> num;
-			for (int i = 0; i <= num;i++) {
-				acum += ((2*i)-1)*((2*i)+1);
+			if (num>=0) {
+				for (int i = 0; i <= num; i++) {
+					acum += ((2 * i) - 1) * ((2 * i) + 1);
+				}
+				respuesta_total = acum;
+				cout << "S(" << num << ")=" << respuesta_total << endl;
 			}
-			respuesta_total = acum;
-			cout << "S(" << num << ")=" << respuesta_total << endl;
+			else {
+				cout << "El numero que usted ingreso no es valido"<<endl;
+			}
+			
 			break;
 		case 3:
 			cout << "Gracias por usar mi laboratorio :) Tenga buen dia!!";
