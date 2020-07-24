@@ -13,12 +13,12 @@ int main()
 		cin >> opcion;
 		switch (opcion) {
 		case 1:
-			cout << "Ingrese el numero";
+			cout << "Ingrese el numero: ";
 			int numero;
 			cin >> numero;
 			double respuesta;
 			respuesta = 1 / (1 + exp(-numero));
-			cout << respuesta<<endl;
+			cout << "f("<<numero<<")= "<<respuesta<<endl;
 			break;
 		case 2:
 			cout << "Ingrese un numero: ";
@@ -31,11 +31,18 @@ int main()
 			respuesta_total = acum;
 			cout << "S(" << num << ")=" << respuesta_total << endl;
 			break;
-		}
-	}
+		case 3:
+			cout << "Gracias por usar mi laboratorio :) Tenga buen dia!!";
+			resp = 'n';
+			break;
+		default :
+			cout << "La opcion que usted ingreso no es valida";
+			break;
+		}//Fin switch
+	}//Fin while
 	
 	
-}
+}//Fin main
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
 // Depurar programa: F5 o menú Depurar > Iniciar depuración
